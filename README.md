@@ -1,8 +1,9 @@
-# Convert-ToHEVC (V8a)
+# Convert-ToHEVC (V8b)
 
 Convertisseur video vers HEVC (x265) avec interface Windows (PowerShell / WinForms) base sur FFmpeg.
 
 ## Fonctions
+- **V8b** : changement de variante FFmpeg (essentials -> complete) detecte et propose dans Parametres et au demarrage ; sondes NVENC detaillees (B-frames, B-ref) avec message d'erreur dans Parametres et log.txt. Les binaires FFmpeg ne sont pas dans le depot (trop volumineux) : l'application les telecharge dans son dossier.
 - **V8a** : apres une mise a jour (et au demarrage), les versions anterieures `Convert-ToHEVC_V*.exe/.ps1` sont supprimees du dossier de l'application sur le poste de l'utilisateur (le depot GitHub les conserve)
 - **V8 (version majeure)** : analyse automatique de chaque video (ffprobe + idet, cropdetect, signalstats sur 3 extraits) et qualite exceptionnelle sans reglage :
   - profils **Rapide / Equilibre / Archivage** (x265 medium / slow / slower ; NVENC p5 / p7) et modes **Automatique** (recherche du CRF/CQ qui atteint un score VMAF 93 / 95 / 96,5, ou SSIM si libvmaf est absent), **Fixe** ou **Debit cible par codec** (MPEG-2 /3,2, MPEG-4 /2,6, H.264 /1,8...) ; plafond = debit de la source (jamais plus gros) hors upscaling
@@ -23,9 +24,9 @@ Convertisseur video vers HEVC (x265) avec interface Windows (PowerShell / WinFor
 - Suppression des metadonnees (chapitres conserves), journal `log.txt`
 
 ## Contenu
-- `powershell/Convert-ToHEVC_V8a.ps1` : source (version courante) ; V8, V7d, V7c, V7b, V7a et V7 : versions precedentes
+- `powershell/Convert-ToHEVC_V8b.ps1` : source (version courante) ; V8a, V8, V7d, V7c, V7b, V7a et V7 : versions precedentes
 - `powershell/Convert-ToHEVC.cmd` : lanceur
-- `release/Convert-ToHEVC_V8a.exe` : version compilee (courante) ; V8, V7d, V7c, V7b, V7a et V7 : precedentes
+- `release/Convert-ToHEVC_V8b.exe` : version compilee (courante) ; V8a, V8, V7d, V7c, V7b, V7a et V7 : precedentes
 - `version.json` : derniere version publiee (lue par la fenetre Parametres)
 - `tools/build-exe/` : sources du lanceur .exe et script de build
 - `release/logo.jpg` : logo (a cote du script / exe ; telecharge automatiquement s'il manque)

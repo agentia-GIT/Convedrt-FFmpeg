@@ -1,11 +1,11 @@
 {
-  "version": "8a",
+  "version": "8b",
   "released": "2026-11-17",
-  "ps1": "powershell/Convert-ToHEVC_V8a.ps1",
-  "exe": "release/Convert-ToHEVC_V8a.exe",
+  "ps1": "powershell/Convert-ToHEVC_V8b.ps1",
+  "exe": "release/Convert-ToHEVC_V8b.exe",
   "logo": "release/logo.jpg",
-  "sha256_ps1": "57ceaad4cb0a25e55a890f231098f8384497d5b560ac84a579b76d2608b40485",
-  "sha256_exe": "c022c7a179649c1c7294ab4a7a3e6fe0fd595f4949a00c031a93a7d9daf9db11",
+  "sha256_ps1": "2afb20a44531390f22e22b2802fb4d78de4afa2c366f1c22dc8249e19eb26c09",
+  "sha256_exe": "18ca368ec753e200a43c3a176bf65dead251fe348cc5f8ef75fb8dc51695f5ac",
   "sha256_logo": "bcd918f953f61f2b906627c06700c7a5a0e501cd0690c96ea15d406c43c317db",
-  "notes": "V8a : les versions anterieures sont supprimees du dossier de l'utilisateur apres mise a jour (et au demarrage). Contenu de la V8 : analyse automatique des videos, qualite automatique VMAF/SSIM, profils, filtres adaptatifs, 10 bits."
+  "notes": "V8b : le passage de FFmpeg essentials a la variante complete (VMAF, libplacebo) est detecte et propose en mise a jour ; sondes NVENC detaillees avec message d'erreur ; suppression des anciennes versions chez l'utilisateur."
 }
