@@ -1,9 +1,11 @@
 {
-  "version": "7c",
+  "version": "7d",
   "released": "2026-11-17",
-  "ps1": "powershell/Convert-ToHEVC_V7c.ps1",
-  "exe": "release/Convert-ToHEVC_V7c.exe",
-  "sha256_ps1": "5249ac5c9440e04b5ce98991fef690c785a54f9b54cfe5a63738d46ef8e59eb3",
-  "sha256_exe": "0d2b4f3d8f91dde133eb24c5fef619cb7af88a7650dd62a0643d845147294b24",
-  "notes": "V7c : verification des mises a jour au demarrage, telechargement automatique de FFmpeg si absent, correction du chronometre apres ouverture des Parametres, erreurs du lanceur affichees."
+  "ps1": "powershell/Convert-ToHEVC_V7d.ps1",
+  "exe": "release/Convert-ToHEVC_V7d.exe",
+  "logo": "release/logo.jpg",
+  "sha256_ps1": "0c898cb704e78b0875f4fca63690fc0b2ac22b8e5ee2476900f6933bfa1c7ec4",
+  "sha256_exe": "40c0adc1e0e4e230a268177be7108315c605b5e4abea28664cde21e8b95cfdf2",
+  "sha256_logo": "bcd918f953f61f2b906627c06700c7a5a0e501cd0690c96ea15d406c43c317db",
+  "notes": "V7d : logo.jpg telecharge automatiquement s'il manque (installation / mise a jour), fenetre Parametres simplifiee."
 }

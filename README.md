@@ -1,8 +1,9 @@
-# Convert-ToHEVC (V7c)
+# Convert-ToHEVC (V7d)
 
 Convertisseur video vers HEVC (x265) avec interface Windows (PowerShell / WinForms) base sur FFmpeg.
 
 ## Fonctions
+- **V7d** : `logo.jpg` telecharge depuis GitHub s'il manque (premier lancement, installation, mise a jour) ; fenetre Parametres simplifiee
 - **V7c** : verification des mises a jour au demarrage (application + FFmpeg, en arriere-plan, bandeau cliquable, option dans Parametres) ; FFmpeg absent -> telechargement automatique propose ; correctifs (voir ci-dessous)
 - **V7b** : fenetre Parametres -> "Faire la mise a jour" (telecharge la nouvelle version depuis GitHub, verifie le SHA-256, redemarre) et mise a jour directe de FFmpeg (derniere version stable, retour arriere si echec)
 - **V7a** : logo engrenage (en-tete) -> fenetre Parametres : lien du depot, verification de la nouvelle version (version.json), verification de la mise a jour FFmpeg
@@ -14,12 +15,12 @@ Convertisseur video vers HEVC (x265) avec interface Windows (PowerShell / WinFor
 - Suppression des metadonnees et chapitres, journal `log.txt`
 
 ## Contenu
-- `powershell/Convert-ToHEVC_V7c.ps1` : source (version courante) ; V7b, V7a et V7 : versions precedentes
+- `powershell/Convert-ToHEVC_V7d.ps1` : source (version courante) ; V7c, V7b, V7a et V7 : versions precedentes
 - `powershell/Convert-ToHEVC.cmd` : lanceur
-- `release/Convert-ToHEVC_V7c.exe` : version compilee (courante) ; V7b, V7a et V7 : precedentes
+- `release/Convert-ToHEVC_V7d.exe` : version compilee (courante) ; V7c, V7b, V7a et V7 : precedentes
 - `version.json` : derniere version publiee (lue par la fenetre Parametres)
 - `tools/build-exe/` : sources du lanceur .exe et script de build
-- `assets/logo.jpg` : logo (a placer a cote du script / exe)
+- `release/logo.jpg` : logo (a cote du script / exe ; telecharge automatiquement s'il manque)
 
 ## Prerequis
 `ffmpeg.exe` et `ffprobe.exe` dans le PATH ou dans le dossier de l'application. S'ils sont absents, l'application propose de les telecharger au demarrage (non inclus dans le depot).
