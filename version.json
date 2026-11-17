@@ -1,11 +1,11 @@
 {
-  "version": "7d",
+  "version": "8",
   "released": "2026-11-17",
-  "ps1": "powershell/Convert-ToHEVC_V7d.ps1",
-  "exe": "release/Convert-ToHEVC_V7d.exe",
+  "ps1": "powershell/Convert-ToHEVC_V8.ps1",
+  "exe": "release/Convert-ToHEVC_V8.exe",
   "logo": "release/logo.jpg",
-  "sha256_ps1": "0c898cb704e78b0875f4fca63690fc0b2ac22b8e5ee2476900f6933bfa1c7ec4",
-  "sha256_exe": "40c0adc1e0e4e230a268177be7108315c605b5e4abea28664cde21e8b95cfdf2",
+  "sha256_ps1": "ceafbb98ea3e370050eea3d7d2a01aeca6b0bef532f99626da255a5a17fbfe03",
+  "sha256_exe": "75fe0148d6790b61c6c7bda4bb4b35bc4dbbdc727e4838dcae8ad518d2dc96d0",
   "sha256_logo": "bcd918f953f61f2b906627c06700c7a5a0e501cd0690c96ea15d406c43c317db",
-  "notes": "V7d : logo.jpg telecharge automatiquement s'il manque (installation / mise a jour), fenetre Parametres simplifiee."
+  "notes": "V8 (version majeure) : analyse automatique de chaque video, profils Rapide/Equilibre/Archivage, qualite automatique par VMAF/SSIM, desentrelacement, telecine inverse, recadrage, anti-pixelisation, 10 bits, matrice 709, audio sans perte converti, options de qualite."
 }

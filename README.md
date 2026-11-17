@@ -1,23 +1,30 @@
-# Convert-ToHEVC (V7d)
+# Convert-ToHEVC (V8)
 
 Convertisseur video vers HEVC (x265) avec interface Windows (PowerShell / WinForms) base sur FFmpeg.
 
 ## Fonctions
+- **V8 (version majeure)** : analyse automatique de chaque video (ffprobe + idet, cropdetect, signalstats sur 3 extraits) et qualite exceptionnelle sans reglage :
+  - profils **Rapide / Equilibre / Archivage** (x265 medium / slow / slower ; NVENC p5 / p7) et modes **Automatique** (recherche du CRF/CQ qui atteint un score VMAF 93 / 95 / 96,5, ou SSIM si libvmaf est absent), **Fixe** ou **Debit cible par codec** (MPEG-2 /3,2, MPEG-4 /2,6, H.264 /1,8...) ; plafond = debit de la source (jamais plus gros) hors upscaling
+  - traitements automatiques, chacun en Auto / Oui / Non : desentrelacement bwdif meme sans upscaling, telecine inverse (fieldmatch + decimate), recadrage des bandes noires, deblock / hqdn3d / deband selon le debit par pixel normalise par codec, niveaux delaves, encodage 10 bits (Main10), matrice BT.601 vers BT.709 pour SD vers HD (etiquettes BT.709), libplacebo (option)
+  - options avancees NVENC (B-frames, b_ref_mode, GOP) et Quick Sync (adaptive_i/b, ICQ) detectees au demarrage avec repli automatique ; ffmpeg complet recommande (VMAF, libplacebo) : case dans Parametres
+  - audio : si piste FR -> pistes FR + sous-titres FR forces ; sinon piste par defaut + sous-titres FR complets (ou forces) ; PCM / TrueHD / FLAC / DTS-HD MA convertis en AC3 640k/448k ou AAC (option) ; chapitres conserves ; sources deja HEVC/AV1/VP9 a bas debit ignorees (option)
+  - score qualite final (VMAF/SSIM) dans le journal ; apercu avec traitement automatique, curseur avant/apres et test de qualite sur 3 s
+  - l'upscaling 1080p garde le comportement V7 (qualite constante CQ 19 / CRF 18, sans plafond de poids)
 - **V7d** : `logo.jpg` telecharge depuis GitHub s'il manque (premier lancement, installation, mise a jour) ; fenetre Parametres simplifiee
 - **V7c** : verification des mises a jour au demarrage (application + FFmpeg, en arriere-plan, bandeau cliquable, option dans Parametres) ; FFmpeg absent -> telechargement automatique propose ; correctifs (voir ci-dessous)
 - **V7b** : fenetre Parametres -> "Faire la mise a jour" (telecharge la nouvelle version depuis GitHub, verifie le SHA-256, redemarre) et mise a jour directe de FFmpeg (derniere version stable, retour arriere si echec)
 - **V7a** : logo engrenage (en-tete) -> fenetre Parametres : lien du depot, verification de la nouvelle version (version.json), verification de la mise a jour FFmpeg
 - Encodage NVIDIA NVENC, Intel Quick Sync ou x265 CPU (detection automatique)
-- Cible de debit : debit d'origine / 1,8
+- Qualite : automatique (VMAF/SSIM), fixe ou debit cible par codec
 - Upscaling 1080p optionnel (Lanczos), 2 passes optionnelles
 - Conservation HDR10 et des etiquettes de couleur de la source
-- Audio FR (ou piste unique) copie sans reencodage, sous-titres FR copies
-- Suppression des metadonnees et chapitres, journal `log.txt`
+- Audio et sous-titres : regles FR (voir V8), copie sans reencodage sauf pistes sans perte (option)
+- Suppression des metadonnees (chapitres conserves), journal `log.txt`
 
 ## Contenu
-- `powershell/Convert-ToHEVC_V7d.ps1` : source (version courante) ; V7c, V7b, V7a et V7 : versions precedentes
+- `powershell/Convert-ToHEVC_V8.ps1` : source (version courante) ; V7d, V7c, V7b, V7a et V7 : versions precedentes
 - `powershell/Convert-ToHEVC.cmd` : lanceur
-- `release/Convert-ToHEVC_V7d.exe` : version compilee (courante) ; V7c, V7b, V7a et V7 : precedentes
+- `release/Convert-ToHEVC_V8.exe` : version compilee (courante) ; V7d, V7c, V7b, V7a et V7 : precedentes
 - `version.json` : derniere version publiee (lue par la fenetre Parametres)
 - `tools/build-exe/` : sources du lanceur .exe et script de build
 - `release/logo.jpg` : logo (a cote du script / exe ; telecharge automatiquement s'il manque)
