@@ -1,11 +1,11 @@
 {
-  "version": "8e",
+  "version": "8f",
   "released": "2026-11-17",
-  "ps1": "powershell/Convert-ToHEVC_V8e.ps1",
-  "exe": "release/Convert-ToHEVC_V8e.exe",
+  "ps1": "powershell/Convert-ToHEVC_V8f.ps1",
+  "exe": "release/Convert-ToHEVC_V8f.exe",
   "logo": "release/logo.jpg",
-  "sha256_ps1": "9f629d5d7ab96f9d85cbfa1e877cbe1cdad68ef48abbb9fd0f401a4ad28a5991",
-  "sha256_exe": "8f23645605cb6070d5a5017dc9b35bc93074c02ba9d5e6f3075b6a93ca8ab567",
+  "sha256_ps1": "17aef225cf240ea0af48258cf98a1341cb607aef8ed79a82f645d156608b05ca",
+  "sha256_exe": "e4591c62296ff5adac53e49d5673d6a992f3866969d852cb5b012debb080f54d",
   "sha256_logo": "bcd918f953f61f2b906627c06700c7a5a0e501cd0690c96ea15d406c43c317db",
-  "notes": "V8e : detection NVENC / Quick Sync plus fiable (meme methode que les sondes avancees) ; l'erreur ffmpeg est affichee dans le rapport systeme."
+  "notes": "V8f : les messages d'erreur des sondes ffmpeg (NVENC...) affichent toutes les lignes utiles au lieu de la derniere, generique."
 }
