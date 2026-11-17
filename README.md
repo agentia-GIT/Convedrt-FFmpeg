@@ -1,8 +1,9 @@
-# Convert-ToHEVC (V8g)
+# Convert-ToHEVC (V8h)
 
 Convertisseur video vers HEVC (x265) avec interface Windows (PowerShell / WinForms) base sur FFmpeg.
 
 ## Fonctions
+- **V8h** : compatibilite NVENC avec FFmpeg 9 (options `-spatial_aq` / `-temporal_aq` supprimees : forme `-spatial-aq` / `-temporal-aq` detectee par sonde, repli sans AQ), utilisee pour l'encodage
 - **V8g** : alerte pilote NVIDIA lisible (ex. ffmpeg demande l'API NVENC 13.1 / pilote 610+, le pilote fournit 13.0), bandeau au demarrage et menu "Pilotes graphiques" (liens NVIDIA, Intel, AMD) dans Parametres
 - **V8f** : erreurs des sondes ffmpeg (NVENC, Quick Sync...) completes (toutes les lignes utiles) dans le rapport systeme
 - **V8e** : detection NVENC / Quick Sync refaite (test de base identique aux sondes avancees, qui pouvait echouer a tort) ; message d'erreur ffmpeg affiche dans le rapport systeme des Parametres
@@ -29,9 +30,9 @@ Convertisseur video vers HEVC (x265) avec interface Windows (PowerShell / WinFor
 - Suppression des metadonnees (chapitres conserves), journal `log.txt`
 
 ## Contenu
-- `powershell/Convert-ToHEVC_V8g.ps1` : source (version courante) ; V8f, V8e, V8d, V8c, V8b, V8a, V8, V7d, V7c, V7b, V7a et V7 : versions precedentes
+- `powershell/Convert-ToHEVC_V8h.ps1` : source (version courante) ; V8g, V8f, V8e, V8d, V8c, V8b, V8a, V8, V7d, V7c, V7b, V7a et V7 : versions precedentes
 - `powershell/Convert-ToHEVC.cmd` : lanceur
-- `release/Convert-ToHEVC_V8g.exe` : version compilee (courante) ; V8f, V8e, V8d, V8c, V8b, V8a, V8, V7d, V7c, V7b, V7a et V7 : precedentes
+- `release/Convert-ToHEVC_V8h.exe` : version compilee (courante) ; V8g, V8f, V8e, V8d, V8c, V8b, V8a, V8, V7d, V7c, V7b, V7a et V7 : precedentes
 - `version.json` : derniere version publiee (lue par la fenetre Parametres)
 - `tools/build-exe/` : sources du lanceur .exe et script de build
 - `release/logo.jpg` : logo (a cote du script / exe ; telecharge automatiquement s'il manque)

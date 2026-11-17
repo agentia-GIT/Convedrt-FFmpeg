@@ -1,11 +1,11 @@
 {
-  "version": "8g",
+  "version": "8h",
   "released": "2026-11-17",
-  "ps1": "powershell/Convert-ToHEVC_V8g.ps1",
-  "exe": "release/Convert-ToHEVC_V8g.exe",
+  "ps1": "powershell/Convert-ToHEVC_V8h.ps1",
+  "exe": "release/Convert-ToHEVC_V8h.exe",
   "logo": "release/logo.jpg",
-  "sha256_ps1": "2fc66b7447a29f9583f6dc20c4471754ddbef0063ba0b2f8b019ebf6cf2f4f46",
-  "sha256_exe": "c7ef1cfc75cd887dd8d391b35d328d1cf07bc4734e364353e1fdd2d11cab4afd",
+  "sha256_ps1": "f3cfb822667f264967295daeaefd261fab61fdbdb1199609962b9aef6a02e2cb",
+  "sha256_exe": "7daa6553363e281cb366b4966825b885513354a509b5998001a4188ee2fc1bee",
   "sha256_logo": "bcd918f953f61f2b906627c06700c7a5a0e501cd0690c96ea15d406c43c317db",
-  "notes": "V8g : alerte pilote NVIDIA lisible (API NVENC exigee / fournie, version de pilote requise) et menu Pilotes graphiques (NVIDIA, Intel, AMD) dans Parametres ; bandeau d'alerte au demarrage."
+  "notes": "V8h : NVENC avec FFmpeg 9 : options -spatial_aq/-temporal_aq supprimees, forme -spatial-aq/-temporal-aq detectee par sonde (repli sans AQ) et utilisee pour l'encodage."
 }
