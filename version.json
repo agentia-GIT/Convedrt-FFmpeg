@@ -1,9 +1,9 @@
 {
-  "version": "7b",
+  "version": "7c",
   "released": "2026-11-17",
-  "ps1": "powershell/Convert-ToHEVC_V7b.ps1",
-  "exe": "release/Convert-ToHEVC_V7b.exe",
-  "sha256_ps1": "7f513f46cb9cb30e6b723f6082a5dbd308a9f16d0ae35b5732412519a5d0f61c",
-  "sha256_exe": "8f4eeee280b7672acb661a96e54eb97838427bfe2bbbefa953822439a5df2f1b",
-  "notes": "V7b : bouton Faire la mise a jour (application, redemarrage automatique) et mise a jour directe de FFmpeg."
+  "ps1": "powershell/Convert-ToHEVC_V7c.ps1",
+  "exe": "release/Convert-ToHEVC_V7c.exe",
+  "sha256_ps1": "5249ac5c9440e04b5ce98991fef690c785a54f9b54cfe5a63738d46ef8e59eb3",
+  "sha256_exe": "0d2b4f3d8f91dde133eb24c5fef619cb7af88a7650dd62a0643d845147294b24",
+  "notes": "V7c : verification des mises a jour au demarrage, telechargement automatique de FFmpeg si absent, correction du chronometre apres ouverture des Parametres, erreurs du lanceur affichees."
 }
