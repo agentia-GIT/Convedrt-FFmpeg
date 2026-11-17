@@ -1,11 +1,11 @@
 {
-  "version": "8c",
+  "version": "8d",
   "released": "2026-11-17",
-  "ps1": "powershell/Convert-ToHEVC_V8c.ps1",
-  "exe": "release/Convert-ToHEVC_V8c.exe",
+  "ps1": "powershell/Convert-ToHEVC_V8d.ps1",
+  "exe": "release/Convert-ToHEVC_V8d.exe",
   "logo": "release/logo.jpg",
-  "sha256_ps1": "2b2341dc41daf7432e589528a44b9c6c1032e0ff2d3513507982545f7671e85d",
-  "sha256_exe": "b08f66f39df11c30f9603f62cd616fc202f48d15ab3a5f099b4b7e1e61ed3f99",
+  "sha256_ps1": "8dae22bfe755a2b9f01124c2206041e091418e7a17e44d0bc502761d863d0703",
+  "sha256_exe": "6d4fbb21da72d31fb0d52c380d3139378367d1d155fa3cc638cece3fea3825b1",
   "sha256_logo": "bcd918f953f61f2b906627c06700c7a5a0e501cd0690c96ea15d406c43c317db",
-  "notes": "V8c : FFmpeg complet installe depuis BtbN (zip) : corrige l'erreur 404 de la variante complete ; nettoyage des anciennes versions journalise et reessaye jusqu'a leur fermeture."
+  "notes": "V8d : verification de tout le systeme au demarrage (application, FFmpeg + ffprobe, build complete BtbN, logo, pilote NVIDIA / NVENC) avec rapport dans Parametres et log.txt."
 }
