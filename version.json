@@ -1,7 +1,9 @@
 {
-  "version": "7a",
+  "version": "7b",
   "released": "2026-11-17",
-  "ps1": "powershell/Convert-ToHEVC_V7a.ps1",
-  "exe": "release/Convert-ToHEVC_V7a.exe",
-  "notes": "V7a : logo engrenage cliquable, fenetre Parametres (lien GitHub, verification de la nouvelle version, verification de la mise a jour FFmpeg)."
+  "ps1": "powershell/Convert-ToHEVC_V7b.ps1",
+  "exe": "release/Convert-ToHEVC_V7b.exe",
+  "sha256_ps1": "7f513f46cb9cb30e6b723f6082a5dbd308a9f16d0ae35b5732412519a5d0f61c",
+  "sha256_exe": "8f4eeee280b7672acb661a96e54eb97838427bfe2bbbefa953822439a5df2f1b",
+  "notes": "V7b : bouton Faire la mise a jour (application, redemarrage automatique) et mise a jour directe de FFmpeg."
 }

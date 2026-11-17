@@ -1,8 +1,9 @@
-# Convert-ToHEVC (V7a)
+# Convert-ToHEVC (V7b)
 
 Convertisseur video vers HEVC (x265) avec interface Windows (PowerShell / WinForms) base sur FFmpeg.
 
 ## Fonctions
+- **V7b** : fenetre Parametres -> "Faire la mise a jour" (telecharge la nouvelle version depuis GitHub, verifie le SHA-256, redemarre) et mise a jour directe de FFmpeg (derniere version stable, retour arriere si echec)
 - **V7a** : logo engrenage (en-tete) -> fenetre Parametres : lien du depot, verification de la nouvelle version (version.json), verification de la mise a jour FFmpeg
 - Encodage NVIDIA NVENC, Intel Quick Sync ou x265 CPU (detection automatique)
 - Cible de debit : debit d'origine / 1,8
@@ -12,9 +13,9 @@ Convertisseur video vers HEVC (x265) avec interface Windows (PowerShell / WinFor
 - Suppression des metadonnees et chapitres, journal `log.txt`
 
 ## Contenu
-- `powershell/Convert-ToHEVC_V7a.ps1` : source (version courante) ; `Convert-ToHEVC_V7.ps1` : version precedente
+- `powershell/Convert-ToHEVC_V7b.ps1` : source (version courante) ; V7a et V7 : versions precedentes
 - `powershell/Convert-ToHEVC.cmd` : lanceur
-- `release/Convert-ToHEVC_V7a.exe` : version compilee (courante) ; `Convert-ToHEVC_V7.exe` : precedente
+- `release/Convert-ToHEVC_V7b.exe` : version compilee (courante) ; V7a et V7 : precedentes
 - `version.json` : derniere version publiee (lue par la fenetre Parametres)
 - `tools/build-exe/` : sources du lanceur .exe et script de build
 - `assets/logo.jpg` : logo (a placer a cote du script / exe)

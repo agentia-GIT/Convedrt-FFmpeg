@@ -11,5 +11,5 @@ Il pose la variable HEVC_APPDIR (dossier de l'exe : ffmpeg.exe, ffprobe.exe, log
 1. Mettre a jour `$script:appVersion` dans le .ps1 (ex. '7b').
 2. Construire le .exe avec `build.sh`.
 3. Deposer `powershell/Convert-ToHEVC_V<v>.ps1` et `release/Convert-ToHEVC_V<v>.exe`.
-4. Mettre a jour `version.json` (version, chemins, notes) : c'est lui que lit l'application.
+4. Mettre a jour `version.json` (version, chemins, notes, `sha256_exe`, `sha256_ps1` = `sha256sum` des deux fichiers) : c'est lui que lit l'application, qui verifie le SHA-256 avant d'installer.
 5. Commit + push sur `main`.
