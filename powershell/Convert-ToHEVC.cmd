@@ -1,0 +1,1 @@
+powershell -ExecutionPolicy Bypass -File .\Convert-ToHEVC_V2.ps1
