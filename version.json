@@ -1,11 +1,11 @@
 {
-  "version": "8",
+  "version": "8a",
   "released": "2026-11-17",
-  "ps1": "powershell/Convert-ToHEVC_V8.ps1",
-  "exe": "release/Convert-ToHEVC_V8.exe",
+  "ps1": "powershell/Convert-ToHEVC_V8a.ps1",
+  "exe": "release/Convert-ToHEVC_V8a.exe",
   "logo": "release/logo.jpg",
-  "sha256_ps1": "ceafbb98ea3e370050eea3d7d2a01aeca6b0bef532f99626da255a5a17fbfe03",
-  "sha256_exe": "75fe0148d6790b61c6c7bda4bb4b35bc4dbbdc727e4838dcae8ad518d2dc96d0",
+  "sha256_ps1": "57ceaad4cb0a25e55a890f231098f8384497d5b560ac84a579b76d2608b40485",
+  "sha256_exe": "c022c7a179649c1c7294ab4a7a3e6fe0fd595f4949a00c031a93a7d9daf9db11",
   "sha256_logo": "bcd918f953f61f2b906627c06700c7a5a0e501cd0690c96ea15d406c43c317db",
-  "notes": "V8 (version majeure) : analyse automatique de chaque video, profils Rapide/Equilibre/Archivage, qualite automatique par VMAF/SSIM, desentrelacement, telecine inverse, recadrage, anti-pixelisation, 10 bits, matrice 709, audio sans perte converti, options de qualite."
+  "notes": "V8a : les versions anterieures sont supprimees du dossier de l'utilisateur apres mise a jour (et au demarrage). Contenu de la V8 : analyse automatique des videos, qualite automatique VMAF/SSIM, profils, filtres adaptatifs, 10 bits."
 }
