@@ -1,0 +1,7 @@
+{
+  "version": "7a",
+  "released": "2026-11-17",
+  "ps1": "powershell/Convert-ToHEVC_V7a.ps1",
+  "exe": "release/Convert-ToHEVC_V7a.exe",
+  "notes": "V7a : logo engrenage cliquable, fenetre Parametres (lien GitHub, verification de la nouvelle version, verification de la mise a jour FFmpeg)."
+}
