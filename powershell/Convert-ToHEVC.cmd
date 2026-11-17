@@ -1,1 +1,1 @@
-powershell -ExecutionPolicy Bypass -File .\Convert-ToHEVC_V2.ps1
+powershell -ExecutionPolicy Bypass -File "%~dp0Convert-ToHEVC_V7.ps1"
