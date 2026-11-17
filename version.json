@@ -1,11 +1,11 @@
 {
-  "version": "8b",
+  "version": "8c",
   "released": "2026-11-17",
-  "ps1": "powershell/Convert-ToHEVC_V8b.ps1",
-  "exe": "release/Convert-ToHEVC_V8b.exe",
+  "ps1": "powershell/Convert-ToHEVC_V8c.ps1",
+  "exe": "release/Convert-ToHEVC_V8c.exe",
   "logo": "release/logo.jpg",
-  "sha256_ps1": "2afb20a44531390f22e22b2802fb4d78de4afa2c366f1c22dc8249e19eb26c09",
-  "sha256_exe": "18ca368ec753e200a43c3a176bf65dead251fe348cc5f8ef75fb8dc51695f5ac",
+  "sha256_ps1": "2b2341dc41daf7432e589528a44b9c6c1032e0ff2d3513507982545f7671e85d",
+  "sha256_exe": "b08f66f39df11c30f9603f62cd616fc202f48d15ab3a5f099b4b7e1e61ed3f99",
   "sha256_logo": "bcd918f953f61f2b906627c06700c7a5a0e501cd0690c96ea15d406c43c317db",
-  "notes": "V8b : le passage de FFmpeg essentials a la variante complete (VMAF, libplacebo) est detecte et propose en mise a jour ; sondes NVENC detaillees avec message d'erreur ; suppression des anciennes versions chez l'utilisateur."
+  "notes": "V8c : FFmpeg complet installe depuis BtbN (zip) : corrige l'erreur 404 de la variante complete ; nettoyage des anciennes versions journalise et reessaye jusqu'a leur fermeture."
 }
