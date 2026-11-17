@@ -1,11 +1,11 @@
 {
-  "version": "8d",
+  "version": "8e",
   "released": "2026-11-17",
-  "ps1": "powershell/Convert-ToHEVC_V8d.ps1",
-  "exe": "release/Convert-ToHEVC_V8d.exe",
+  "ps1": "powershell/Convert-ToHEVC_V8e.ps1",
+  "exe": "release/Convert-ToHEVC_V8e.exe",
   "logo": "release/logo.jpg",
-  "sha256_ps1": "8dae22bfe755a2b9f01124c2206041e091418e7a17e44d0bc502761d863d0703",
-  "sha256_exe": "6d4fbb21da72d31fb0d52c380d3139378367d1d155fa3cc638cece3fea3825b1",
+  "sha256_ps1": "9f629d5d7ab96f9d85cbfa1e877cbe1cdad68ef48abbb9fd0f401a4ad28a5991",
+  "sha256_exe": "8f23645605cb6070d5a5017dc9b35bc93074c02ba9d5e6f3075b6a93ca8ab567",
   "sha256_logo": "bcd918f953f61f2b906627c06700c7a5a0e501cd0690c96ea15d406c43c317db",
-  "notes": "V8d : verification de tout le systeme au demarrage (application, FFmpeg + ffprobe, build complete BtbN, logo, pilote NVIDIA / NVENC) avec rapport dans Parametres et log.txt."
+  "notes": "V8e : detection NVENC / Quick Sync plus fiable (meme methode que les sondes avancees) ; l'erreur ffmpeg est affichee dans le rapport systeme."
 }

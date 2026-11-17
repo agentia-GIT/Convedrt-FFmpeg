@@ -1,8 +1,9 @@
-# Convert-ToHEVC (V8d)
+# Convert-ToHEVC (V8e)
 
 Convertisseur video vers HEVC (x265) avec interface Windows (PowerShell / WinForms) base sur FFmpeg.
 
 ## Fonctions
+- **V8e** : detection NVENC / Quick Sync refaite (test de base identique aux sondes avancees, qui pouvait echouer a tort) ; message d'erreur ffmpeg affiche dans le rapport systeme des Parametres
 - **V8d** : verification de tout le systeme au demarrage, en arriere-plan (fenetre jamais figee) : version de l'application, FFmpeg (stable gyan.dev ou build complete BtbN) et coherence ffmpeg/ffprobe, logo (mis a jour automatiquement), capacites (VMAF, libplacebo), pilote NVIDIA / NVENC (alerte si trop ancien) ; bandeau cliquable, rapport detaille dans Parametres (bouton "Tout reverifier maintenant") et dans log.txt
 - **V8c** : la variante FFmpeg complete est telechargee depuis BtbN/FFmpeg-Builds (zip GPL, ~200 Mo) car gyan.dev ne la publie qu'en .7z (erreur 404 corrigee) ; nettoyage des anciennes versions Convert-ToHEVC_V* journalise (log.txt) et reessaye jusqu'a la fermeture de l'ancienne version
 - **V8b** : changement de variante FFmpeg (essentials -> complete) detecte et propose dans Parametres et au demarrage ; sondes NVENC detaillees (B-frames, B-ref) avec message d'erreur dans Parametres et log.txt. Les binaires FFmpeg ne sont pas dans le depot (trop volumineux) : l'application les telecharge dans son dossier.
@@ -26,9 +27,9 @@ Convertisseur video vers HEVC (x265) avec interface Windows (PowerShell / WinFor
 - Suppression des metadonnees (chapitres conserves), journal `log.txt`
 
 ## Contenu
-- `powershell/Convert-ToHEVC_V8d.ps1` : source (version courante) ; V8c, V8b, V8a, V8, V7d, V7c, V7b, V7a et V7 : versions precedentes
+- `powershell/Convert-ToHEVC_V8e.ps1` : source (version courante) ; V8d, V8c, V8b, V8a, V8, V7d, V7c, V7b, V7a et V7 : versions precedentes
 - `powershell/Convert-ToHEVC.cmd` : lanceur
-- `release/Convert-ToHEVC_V8d.exe` : version compilee (courante) ; V8c, V8b, V8a, V8, V7d, V7c, V7b, V7a et V7 : precedentes
+- `release/Convert-ToHEVC_V8e.exe` : version compilee (courante) ; V8d, V8c, V8b, V8a, V8, V7d, V7c, V7b, V7a et V7 : precedentes
 - `version.json` : derniere version publiee (lue par la fenetre Parametres)
 - `tools/build-exe/` : sources du lanceur .exe et script de build
 - `release/logo.jpg` : logo (a cote du script / exe ; telecharge automatiquement s'il manque)
